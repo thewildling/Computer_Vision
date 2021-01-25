@@ -1,5 +1,5 @@
 import numpy as np
-import utils
+import assignment1.utils as utils
 
 # NO NEED TO CHANGE THIS CODE
 

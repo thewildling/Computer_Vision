@@ -1,6 +1,10 @@
 import numpy as np
-import utils
+import assignment1.utils as utils
+import
 np.random.seed(1)
+
+train_dataset = datasets.MNIST(
+                root="data/mnist", train=True, download=True, transform=None)
 
 
 def pre_process_images(X: np.ndarray):
@@ -13,6 +17,8 @@ def pre_process_images(X: np.ndarray):
     assert X.shape[1] == 784,\
         f"X.shape[1]: {X.shape[1]}, should be 784"
     # TODO implement this function (Task 2a)
+    X.data[X.size + 1] = 1
+
     return X
 
 

@@ -1,6 +1,6 @@
 import numpy as np
-import utils
-from task2a import pre_process_images
+import assignment1.utils as utils
+from assignment1.task2a import pre_process_images
 np.random.seed(1)
 
 
